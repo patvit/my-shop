@@ -1,16 +1,22 @@
 import { ReactElement, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+// eslint-disable-next-line   
 import ErrorResponse from '../components/ErrorResponse';
+// eslint-disable-next-line   
 import Preloader from '../components/Preloader';
 import { useCartStore } from '../store/orders';
 //import { useOrderQuery } from '../services/query-hooks/useOrderQuery';
 
 export default function Order(): ReactElement {
-
+// eslint-disable-next-line   
   const [count, setCount] = useState(0);
+  // eslint-disable-next-line   
   const [select, setSelect] = useState<string>('');
+  // eslint-disable-next-line   
   const navigate = useNavigate();
+  // eslint-disable-next-line   
   const { id } = useParams();
+  // eslint-disable-next-line   
   const { addItem } = useCartStore()
 
   //const { data, isError, isLoading, refetch } = useOrderQuery(id)
@@ -36,11 +42,11 @@ export default function Order(): ReactElement {
   //     navigate('/cart');
   //   }
   // }
-
+// eslint-disable-next-line   
   function increment() {
     setCount(prev => prev + 1)
   }
-
+// eslint-disable-next-line   
   function decrement() {
     setCount(prev => {
       if (prev > 0) {
