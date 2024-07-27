@@ -1,3 +1,7 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/sbl7evc1d5amg69q?svg=true)](https://ci.appveyor.com/project/patvit/my-shop)
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
